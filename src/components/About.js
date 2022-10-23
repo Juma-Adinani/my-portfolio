@@ -22,14 +22,23 @@ const About = () => {
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Web&nbsp;&amp;&nbsp;Mobile App Developer</h3>
             <p className="fst-italic">
-              Mission driven software developer, with a passion for thoughtful application development, collaboration and teaching.
+              Mission driven software developer, with a passion for thoughtful
+              application development, collaboration and teaching.
             </p>
             <div className="row">
               <div className="col-lg-6">
                 <ul>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <strong>Website:</strong> <span>www.example.com</span>
+                    <strong>Website:</strong>{" "}
+                    <span>
+                      <a
+                        href="https://jumaadinani.vercel.app"
+                        className="text-success"
+                      >
+                      https://jumaadinani.vercel.app
+                      </a>
+                    </span>
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
@@ -56,7 +65,10 @@ const About = () => {
             </div>
             <p>
               As a software developer, I enjoy using my obsessive attention to
-              detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's why I'm excited to make a big impact at a high growth of a company.
+              detail, my unequivocal love for making things, and my
+              mission-driven work ethic to literally change the world. That's
+              why I'm excited to make a big impact at a high growth of a
+              company.
             </p>
           </div>
         </div>
