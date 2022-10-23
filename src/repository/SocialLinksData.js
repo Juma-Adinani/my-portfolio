@@ -8,7 +8,7 @@ const SocialLinks = {
     },
     {
       id: 2,
-      link: `#`,
+      link: `https://www.facebook.com/profile.php?id=100055855374700`,
       socialIcon: `bi bi-facebook`,
       socialClass: `facebook`,
     },
