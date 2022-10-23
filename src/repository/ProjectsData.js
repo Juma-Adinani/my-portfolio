@@ -4,7 +4,7 @@ const ProjectData = {
     {
       id: 1,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${ImgPath}instadalali.jpg`,
+      img: `${ImgPath}instadalali.JPG`,
       title: `App 1`,
       appName: `Instadalali Web App`,
       category: `Web application`,
@@ -15,7 +15,7 @@ const ProjectData = {
     {
       id: 2,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${ImgPath}niwezeshe.jpg`,
+      img: `${ImgPath}niwezeshe.JPG`,
       title: `App 2`, 
       appName: `Niwezeshe website`,
       category: `Website`,
@@ -26,7 +26,7 @@ const ProjectData = {
     {
       id: 3,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${ImgPath}northbeyond.jpg`,
+      img: `${ImgPath}northbeyond.JPG`,
       title: `App 3`,
       appName: `North & beyond website`,
       category: `Website`,
@@ -37,7 +37,7 @@ const ProjectData = {
     {
       id: 4,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${ImgPath}jp.jpg`,
+      img: `${ImgPath}jp.JPG`,
       title: `App 4`,
       appName: `J&P ICT TRAINING WEBSITE`,
       category: `Website`,
@@ -48,7 +48,7 @@ const ProjectData = {
     {
       id: 5,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${ImgPath}royaltour.jpg`,
+      img: `${ImgPath}royaltour.JPG`,
       title: `App 5`,
       appName: `Tanzania the Royal Tour Website`,
       category: `Website`,

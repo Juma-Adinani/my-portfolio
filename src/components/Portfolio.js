@@ -28,7 +28,7 @@ const Portfolio = () => {
           {ProjectData.myProjects.map((project) => (
             <div className={project.divFilterClass} key={project.id}>
               <div className="portfolio-wrap">
-                <img src={project.img} className="img-fluid" alt="" />
+                <img src={project.img} className="img-fluid" alt="empty image" />
                 <div className="portfolio-info">
                   <h4>{project.title}</h4>
                   <p>{project.appName}</p>
