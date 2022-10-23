@@ -1,4 +1,5 @@
 import React from "react";
+import SocialLinks from "../repository/SocialLinksData";
 
 const Contact = () => {
   return (
@@ -23,31 +24,28 @@ const Contact = () => {
               <i className="bx bx-share-alt"></i>
               <h3>Social Profiles</h3>
               <div className="social-links">
-                <a
-                  href="https://twitter.com/jumaadinani19"
-                  className="twitter"
-                  target="_blank"
-                >
-                  <i className="bi bi-twitter"></i>
-                </a>
-                <a href="/" className="facebook">
-                  <i className="bi bi-facebook"></i>
-                </a>
-                <a
-                  href="https://instagram.com/jumaadinani19"
-                  className="instagram"
-                  target="_blank"
-                >
-                  <i className="bi bi-instagram"></i>
-                </a>
-                <a
-                  href="https://github.com/Juma-Adinani"
-                  className="google-plus"
-                  target="_blank"
-                >
-                  <i className="bi bi-github"></i>
-                </a>
-                {/* <!-- <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a> --> */}
+                {SocialLinks.socialLinks.map((social) =>
+                  social.link === "#" ? (
+                    <a
+                      key={social.id}
+                      href="#"
+                      className={social.class}
+                      rel="noreferrer"
+                    >
+                      <i className={social.socialIcon}></i>
+                    </a>
+                  ) : (
+                    <a
+                      key={social.id}
+                      href={social.link}
+                      className={social.socialClass}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className={social.socialIcon}></i>
+                    </a>
+                  )
+                )}
               </div>
             </div>
           </div>

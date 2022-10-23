@@ -1,10 +1,10 @@
-let Img = process.env.PUBLIC_URL + "assets/img/portfolio/";
+let ImgPath = process.env.PUBLIC_URL + "assets/img/portfolio/";
 const ProjectData = {
   myProjects: [
     {
       id: 1,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${Img}instadalali.jpg`,
+      img: `${ImgPath}instadalali.jpg`,
       title: `App 1`,
       appName: `Instadalali Web App`,
       category: `Web application`,
@@ -15,8 +15,8 @@ const ProjectData = {
     {
       id: 2,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${Img}niwezeshe.jpg`,
-      title: `App 2`,
+      img: `${ImgPath}niwezeshe.jpg`,
+      title: `App 2`, 
       appName: `Niwezeshe website`,
       category: `Website`,
       client: `HudumaBomba Company`,
@@ -26,7 +26,7 @@ const ProjectData = {
     {
       id: 3,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${Img}northbeyond.jpg`,
+      img: `${ImgPath}northbeyond.jpg`,
       title: `App 3`,
       appName: `North & beyond website`,
       category: `Website`,
@@ -37,7 +37,7 @@ const ProjectData = {
     {
       id: 4,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${Img}jp.jpg`,
+      img: `${ImgPath}jp.jpg`,
       title: `App 4`,
       appName: `J&P ICT TRAINING WEBSITE`,
       category: `Website`,
@@ -48,7 +48,7 @@ const ProjectData = {
     {
       id: 5,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-web`,
-      img: `${Img}royaltour.jpg`,
+      img: `${ImgPath}royaltour.jpg`,
       title: `App 5`,
       appName: `Tanzania the Royal Tour Website`,
       category: `Website`,
@@ -59,7 +59,7 @@ const ProjectData = {
     {
       id: 6,
       divFilterClass: `col-lg-4 col-md-6 portfolio-item filter-app`,
-      img: `${Img}nouri.png`,
+      img: `${ImgPath}nouri.png`,
       title: `App 6`,
       appName: `Nouri café delivery app`,
       category: `Mobile Application`,

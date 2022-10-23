@@ -5,8 +5,20 @@ import Resume from "./Resume";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import SocialLinks from "../repository/SocialLinksData";
+import useScript from "../utils/UseScript";
 
 function Navbar() {
+  let scriptPath = process.env.PUBLIC_URL + "assets/vendor/";
+  useScript(`${scriptPath}purecounter/purecounter.js`);
+  useScript(`${scriptPath}bootstrap/js/bootstrap.bundle.min.js`);
+  useScript(`${scriptPath}glightbox/js/glightbox.min.js`);
+  useScript(`${scriptPath}isotope-layout/isotope.pkgd.min.js`);
+  useScript(`${scriptPath}swiper/swiper-bundle.min.js`);
+  useScript(`${scriptPath}waypoints/noframework.waypoints.js`);
+  useScript(`${scriptPath}php-email-form/validate.js`);
+  useScript(`${process.env.PUBLIC_URL}/assets/js/main.js`);
+
   let navigate = useNavigate();
   function changeLink(location) {
     navigate(location, { replace: true });
@@ -81,33 +93,28 @@ function Navbar() {
           </nav>
 
           <div className="social-links">
-            <a
-              href="https://twitter.com/jumaadinani19"
-              className="twitter"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="bi bi-twitter"></i>
-            </a>
-            <a href="/" className="facebook">
-              <i className="bi bi-facebook"></i>
-            </a>
-            <a
-              href="https://instagram.com/jumaadinani19"
-              className="instagram"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="bi bi-instagram"></i>
-            </a>
-            <a
-              href="https://github.com/Juma-Adinani"
-              className="linkedin"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="bi bi-github"></i>
-            </a>
+            {SocialLinks.socialLinks.map((social) =>
+              social.link === "#" ? (
+                <a
+                  key={social.id}
+                  href="#"
+                  className={social.class}
+                  rel="noreferrer"
+                >
+                  <i className={social.socialIcon}></i>
+                </a>
+              ) : (
+                <a
+                  key={social.id}
+                  href={social.link}
+                  className={social.socialClass}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className={social.socialIcon}></i>
+                </a>
+              )
+            )}
           </div>
         </div>
       </header>

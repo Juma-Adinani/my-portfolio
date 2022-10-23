@@ -11,7 +11,7 @@ const Resume = () => {
 
         <div className="row">
           <div className="col-lg-6">
-            <h3 className="resume-title">Sumary</h3>
+            <h3 className="resume-title">Summary</h3>
             <div className="resume-item pb-0">
               <h4>Personal Experience</h4>
               <p>
@@ -23,7 +23,7 @@ const Resume = () => {
                 </em>
                 <br />
                 I'm mostly experienced with FLUTTER for mobile app development,
-                LARAVEL for api development and REACT JS for web development
+                LARAVEL for api development, REACT JS for web development and ELECTRON for desktop app development.
               </p>
             </div>
 

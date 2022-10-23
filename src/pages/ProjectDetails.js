@@ -1,8 +1,20 @@
 import React from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import ProjectData from "../repository/ProjectsData";
+import useScript from "../utils/UseScript";
 
 const ProjectDetails = () => {
+
+      let scriptPath = process.env.PUBLIC_URL + "assets/vendor/";
+      useScript(`${scriptPath}purecounter/purecounter.js`);
+      useScript(`${scriptPath}bootstrap/js/bootstrap.bundle.min.js`);
+      useScript(`${scriptPath}glightbox/js/glightbox.min.js`);
+      useScript(`${scriptPath}isotope-layout/isotope.pkgd.min.js`);
+      useScript(`${scriptPath}swiper/swiper-bundle.min.js`);
+      useScript(`${scriptPath}waypoints/noframework.waypoints.js`);
+      useScript(`${scriptPath}php-email-form/validate.js`);
+      useScript(`${process.env.PUBLIC_URL}/assets/js/main.js`);
+
   const { projectId } = useParams();
   const thisProject = ProjectData.myProjects.find(
     (project) => project.id == projectId
@@ -15,52 +27,72 @@ const ProjectDetails = () => {
     window.location.reload();
   }
   return (
-    <div id="portfolio-details" className="portfolio-details">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8">
-            <h2 className="portfolio-title">{thisProject.appName}</h2>
+    <main id="main">
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h2 class="portfolio-title">
+                This is an example of portfolio detail
+              </h2>
 
-            <div className="portfolio-details-slider swiper">
-              <div className="swiper-wrapper align-items-center">
-                <div className="swiper-slide">
-                  <img src={thisProject.img} alt="no picture" />
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src={thisProject.img}
+                      alt="nothing"
+                    />
+                  </div>
+
+                  {/* <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/portfolio-details-2.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/portfolio-details-3.jpg"
+                      alt=""
+                    />
+                  </div> */}
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
-              <div className="swiper-pagination"></div>
             </div>
-          </div>
 
-          <div className="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li>
-                <strong>Category</strong>: {thisProject.category}
-              </li>
-              <li>
-                <strong>Client</strong>: {thisProject.client}
-              </li>
-              {/* <li>
-                <strong>Project date</strong>: 01 March, 2020
-              </li> */}
-              <li>
-                <strong>Project URL</strong>:
-                <a href={thisProject.projectUrl}>&nbsp;&nbsp;{thisProject.projectUrl}</a>
-              </li>
-            </ul>
+            <div class="col-lg-4 portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li>
+                  <strong>Category</strong>: Web design
+                </li>
+                <li>
+                  <strong>Client</strong>: ASU Company
+                </li>
+                <li>
+                  <strong>Project date</strong>: 01 March, 2020
+                </li>
+                <li>
+                  <strong>Project URL</strong>: <a href="#">www.example.com</a>
+                </li>
+              </ul>
 
-            <p>{thisProject.description}</p>
-            <Link
-              className="nav-link"
-              to="/#portfolio"
-              onClick={() => changeLink("/#portfolio")}
-            >
-              <i className="bi bi-arrow-left">&nbsp;Go back</i>
-            </Link>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos
+                itaque inventore commodi labore quia quia. Exercitationem
+                repudiandae officiis neque suscipit non officia eaque itaque
+                enim. Voluptatem officia accusantium nesciunt est omnis tempora
+                consectetur dignissimos. Sequi nulla at esse enim cum deserunt
+                eius.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
