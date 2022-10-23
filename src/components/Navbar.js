@@ -19,11 +19,11 @@ function Navbar() {
   useScript(`${scriptPath}php-email-form/validate.js`);
   useScript(`${process.env.PUBLIC_URL}/assets/js/main.js`);
 
-  let navigate = useNavigate();
-  function changeLink(location) {
-    navigate(location, { replace: true });
-    window.location.reload();
-  }
+  // let navigate = useNavigate();
+  // function changeLink(location) {
+  //   navigate(location, { replace: true });
+  //   window.location.reload();
+  // }
   return (
     <div>
       <header id="header">
@@ -39,15 +39,15 @@ function Navbar() {
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <a className="nav-link active" href="/">
+                <Link className="nav-link active" to="/#header">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
                   className="nav-link"
                   to="/#about"
-                  onClick={() => changeLink("/#about")}
+                  // onClick={() => changeLink("/#about")}
                 >
                   About
                 </Link>
@@ -56,7 +56,7 @@ function Navbar() {
                 <Link
                   className="nav-link"
                   to="/#resume"
-                  onClick={() => changeLink("/#resume")}
+                  // onClick={() => changeLink("/#resume")}
                 >
                   Resume
                 </Link>
@@ -65,7 +65,7 @@ function Navbar() {
                 <Link
                   className="nav-link"
                   to="/#services"
-                  onClick={() => changeLink("/#services")}
+                  // onClick={() => changeLink("/#services")}
                 >
                   Services
                 </Link>
@@ -74,7 +74,7 @@ function Navbar() {
                 <Link
                   className="nav-link"
                   to="/#portfolio"
-                  onClick={() => changeLink("/#portfolio")}
+                  // onClick={() => changeLink("/#portfolio")}
                 >
                   Portfolio
                 </Link>
@@ -83,7 +83,7 @@ function Navbar() {
                 <Link
                   className="nav-link"
                   to="/#contact"
-                  onClick={() => changeLink("/#contact")}
+                  // onClick={() => changeLink("/#contact")}
                 >
                   Contact
                 </Link>
