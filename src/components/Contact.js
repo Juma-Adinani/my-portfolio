@@ -15,7 +15,7 @@ const Contact = () => {
             <div className="info-box">
               <i className="bx bx-map"></i>
               <h3>My Address</h3>
-              <p>Magomeni, Dar Es Salaam - Tanzania</p>
+              <p>Dar Es Salaam - Tanzania</p>
             </div>
           </div>
 
