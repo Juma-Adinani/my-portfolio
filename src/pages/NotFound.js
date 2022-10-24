@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function NotFound() {
-  let ImgPath = process.env.PUBLIC_URL + "assets/img/PageNotFound.png";
+  let ImgPath = process.env.PUBLIC_URL + "assets/img/pageNotFound.png";
 
   let navigate = useNavigate();
 
