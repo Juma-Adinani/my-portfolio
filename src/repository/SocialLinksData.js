@@ -20,7 +20,7 @@ const SocialLinks = {
     },
     {
       id: 4,
-      link: `https://github.com/jumaadinani19`,
+      link: `https://github.com/Juma-Adinani`,
       socialIcon: `bi bi-github`,
       socialClass: `twitter`,
     },
