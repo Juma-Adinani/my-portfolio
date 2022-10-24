@@ -52,7 +52,7 @@ const Resume = () => {
             <h3 className="resume-title">Professional Experience</h3>
             <div className="resume-item">
               <h4>Fullstack Developer</h4>
-              <h5>June, 2022 - present</h5>
+              <h5>June, 2022 - Nov, 2022</h5>
               <p>
                 <em>J&P Electronics Company, Arusha - Tanzania</em>
               </p>
