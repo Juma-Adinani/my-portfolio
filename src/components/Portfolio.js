@@ -35,7 +35,7 @@ const Portfolio = () => {
                   <div className="portfolio-links">
                     {project.projectUrl === "empty" ? (
                       <Link
-                        to="/404"
+                        to="/503"
                         // href={project.projectUrl}
                         data-gallery="portfolioDetailsGallery"
                         data-glightbox="type: external"
