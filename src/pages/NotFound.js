@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function NotFound() {
+  let ImgPath = process.env.PUBLIC_URL + "assets/img/PageNotFound.png";
+
   let navigate = useNavigate();
 
   function changeLink(location) {
@@ -10,8 +12,11 @@ function NotFound() {
   }
   return (
     <center className="not-found">
-      <h5 className="text-danger">Oops!, link is temporarily Not available</h5>
-      <p></p>
+      <h4 className="text-center text-danger">Oops!,</h4>
+      <div className="container">
+        <img src={ImgPath} className="img-fluid" alt="No image" width="600" />
+      </div>
+      <h5 className="text-danger">link is temporarily Not available</h5>
       <p></p>
       <Link to="/#portfolio" onClick={() => changeLink("/#portfolio")}>
         <i className="bi bi-arrow-left btn btn-outline-success">
