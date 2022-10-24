@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function NotFound() {
-  let ImgPath = process.env.PUBLIC_URL + "assets/img/page-not-found.png";
+  let ImgPath = process.env.PUBLIC_URL + "assets/img/not-found.png";
 
   let navigate = useNavigate();
 
@@ -12,12 +12,8 @@ function NotFound() {
   }
   return (
     <center className="not-found">
-      <h4 className="text-center text-danger">Oops!,</h4>
-      <div className="container">
-        <img src={ImgPath} className="img-fluid" alt="No image" width="600" />
-      </div>
-      <h5 className="text-danger">link is temporarily Not available</h5>
-      <p></p>
+      <img src={ImgPath} className="img-fluid" alt="No image" width="450" />
+      <h5 className="text-danger">temporarily Not available</h5>
       <Link to="/#portfolio" onClick={() => changeLink("/#portfolio")}>
         <i className="bi bi-arrow-left btn btn-outline-success">
           &nbsp;&nbsp;Return Back
