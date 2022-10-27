@@ -1,5 +1,6 @@
 import React from "react";
 import ServiceData from "../repository/ServiceData";
+import ServiceList from './listData/ServiceList'
 
 const Services = () => {
   return (
@@ -11,18 +12,8 @@ const Services = () => {
         </div>
 
         <div className="row">
-          {ServiceData.myServices.map((service) => (
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" key={service.id}>
-              <div className="icon-box w-100">
-                <div className="icon">
-                  <i className={service.icon}></i>
-                </div>
-                <h4>
-                  <a href="#">{service.name}</a>
-                </h4>
-                <p>{service.description}</p>
-              </div>
-            </div>
+          {ServiceData.myServices.map((service, index) => (
+            <ServiceList key={index} service={service} />
           ))}
         </div>
       </div>

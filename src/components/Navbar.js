@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import About from "./About";
 import Resume from "./Resume";
 import Services from "./Services";
@@ -7,6 +7,7 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import SocialLinks from "../repository/SocialLinksData";
 import useScript from "../utils/UseScript";
+import SocialLinkList from "./listData/SocialLinkList";
 
 function Navbar() {
   let scriptPath = process.env.PUBLIC_URL + "assets/vendor/";
@@ -93,28 +94,9 @@ function Navbar() {
           </nav>
 
           <div className="social-links">
-            {SocialLinks.socialLinks.map((social) =>
-              social.link === "#" ? (
-                <a
-                  key={social.id}
-                  href="#"
-                  className={social.class}
-                  rel="noreferrer"
-                >
-                  <i className={social.socialIcon}></i>
-                </a>
-              ) : (
-                <a
-                  key={social.id}
-                  href={social.link}
-                  className={social.socialClass}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className={social.socialIcon}></i>
-                </a>
-              )
-            )}
+            {SocialLinks.socialLinks.map((social, index) => (
+              <SocialLinkList key={index} social={social}/>
+            ))}
           </div>
         </div>
       </header>

@@ -1,6 +1,7 @@
 import React from "react";
 import TestimonialData from "../repository/TestimonialData";
 import CountContainer from "../repository/CountContainer";
+import CountList from "./listData/CountList";
 
 const About = () => {
   return (
@@ -36,7 +37,7 @@ const About = () => {
                         href="https://jumaadinani.vercel.app"
                         className="text-success"
                       >
-                      https://jumaadinani.vercel.app
+                        https://jumaadinani.vercel.app
                       </a>
                     </span>
                   </li>
@@ -46,7 +47,7 @@ const About = () => {
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <strong>City:</strong> <span>Dar Es Salaam, Tanzania</span>
+                    <strong>City:</strong> <span>Dar es salaam, Tanzania</span>
                   </li>
                 </ul>
               </div>
@@ -58,7 +59,7 @@ const About = () => {
                   </li>
                   <li>
                     <i className="bi bi-chevron-right"></i>
-                    <strong>Freelance:</strong> <span>Available</span>
+                    <strong>Freelance:</strong> <span>Available 24/7</span>
                   </li>
                 </ul>
               </div>
@@ -75,19 +76,8 @@ const About = () => {
       </div>
       <div className="counts container">
         <div className="row">
-          {CountContainer.countContainer.map((count) => (
-            <div className="col-lg-3 col-md-6" key={count.id}>
-              <div className="count-box">
-                <i className={count.icon}></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end={count.count}
-                  data-purecounter-duration="1"
-                  className="purecounter"
-                ></span>
-                <p>{count.name}</p>
-              </div>
-            </div>
+          {CountContainer.countContainer.map((count, index) => (
+            <CountList key={index} count={count} />
           ))}
         </div>
       </div>

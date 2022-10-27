@@ -1,3 +1,4 @@
+import ProjectData from "../repository/ProjectsData";
 const CountContainer = {
   countContainer: [
     {
@@ -9,7 +10,7 @@ const CountContainer = {
     {
       id: 2,
       icon: "bi bi-journal-richtext",
-      count: "7",
+      count: `${ProjectData.myProjects.length}`,
       name: "Projects",
     },
     {

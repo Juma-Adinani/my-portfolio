@@ -17,7 +17,7 @@ const ProjectDetails = () => {
 
   const { projectId } = useParams();
   const thisProject = ProjectData.myProjects.find(
-    (project) => project.id == projectId
+    (project) => project.id === projectId
   );
 
   let navigate = useNavigate();

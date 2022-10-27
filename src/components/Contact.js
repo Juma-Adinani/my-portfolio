@@ -1,5 +1,6 @@
 import React from "react";
 import SocialLinks from "../repository/SocialLinksData";
+import SocialLinkList from "./listData/SocialLinkList";
 
 const Contact = () => {
   return (
@@ -15,7 +16,7 @@ const Contact = () => {
             <div className="info-box">
               <i className="bx bx-map"></i>
               <h3>My Address</h3>
-              <p>Dar Es Salaam - Tanzania</p>
+              <p>Dar es salaam - Tanzania</p>
             </div>
           </div>
 
@@ -24,28 +25,9 @@ const Contact = () => {
               <i className="bx bx-share-alt"></i>
               <h3>Social Profiles</h3>
               <div className="social-links">
-                {SocialLinks.socialLinks.map((social) =>
-                  social.link === "#" ? (
-                    <a
-                      key={social.id}
-                      href="#"
-                      className={social.class}
-                      rel="noreferrer"
-                    >
-                      <i className={social.socialIcon}></i>
-                    </a>
-                  ) : (
-                    <a
-                      key={social.id}
-                      href={social.link}
-                      className={social.socialClass}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className={social.socialIcon}></i>
-                    </a>
-                  )
-                )}
+                {SocialLinks.socialLinks.map((social, index) => (
+                  <SocialLinkList key={index} social={social} />
+                ))}
               </div>
             </div>
           </div>
@@ -65,7 +47,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form
+        {/* <form
           action="forms/contact.php"
           method="post"
           role="form"
@@ -122,7 +104,7 @@ const Contact = () => {
           <div className="text-center">
             <button type="submit">Send Message</button>
           </div>
-        </form>
+        </form> */}
       </div>
     </section>
   );

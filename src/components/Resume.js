@@ -1,4 +1,6 @@
 import React from "react";
+import ResumeData from "../repository/ResumeData";
+import ProfExpList from "./listData/ProfExpList";
 
 const Resume = () => {
   return (
@@ -23,7 +25,8 @@ const Resume = () => {
                 </em>
                 <br />
                 I'm mostly experienced with FLUTTER for mobile app development,
-                LARAVEL for api development, REACT JS for web development and ELECTRON for desktop app development.
+                LARAVEL for api development, REACT JS for web development and
+                ELECTRON for desktop app development.
               </p>
             </div>
 
@@ -50,45 +53,9 @@ const Resume = () => {
           </div>
           <div className="col-lg-6">
             <h3 className="resume-title">Professional Experience</h3>
-            <div className="resume-item">
-              <h4>Fullstack Developer</h4>
-              <h5>June, 2022 - Nov, 2022</h5>
-              <p>
-                <em>J&P Electronics Company, Arusha - Tanzania</em>
-              </p>
-              
-                <ul>
-                  <li>Developed a company website.</li>
-                  <li>
-                    Developed a food delivery app for a restaurant in Arusha
-                    (Nouri Cafe)
-                  </li>
-                  <li>
-                    Recommended and consulted with clients on the most
-                    appropriate mobile app development
-                  </li>
-                  <li>Teaching students the basics of web development</li>
-                </ul>
-              
-            </div>
-            <div className="resume-item">
-              <h4>Frontend Developer</h4>
-              <h5>2021 - 2022</h5>
-              <p>
-                <em>Huduma Bomba Technologies, Dar Es Salaam - Tanzania</em>
-              </p>
-              
-                <ul>
-                  <li>
-                    Collaborate in the design, development, and implementation
-                    of projects; instadalali web app and niwezeshe app
-                  </li>
-                  {/* <!-- <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li> --> */}
-                </ul>
-              
-            </div>
+            {ResumeData.professionalExperience.map((profExp, index) => (
+              <ProfExpList key={index} profExp={profExp} />
+            ))}
           </div>
         </div>
       </div>
