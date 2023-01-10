@@ -19,27 +19,30 @@ const Resume = () => {
               <p>
                 <em>
                   I'm a self-taught Innovative and deadline-driven Developer
-                  with 2+ years of experience designing and developing
+                  with 4+ years of experience designing and developing
                   user-friendly websites and mobile apps from initial concept to
                   final, polished deliverable.
                 </em>
                 <br />
                 I'm mostly experienced with FLUTTER for mobile app development,
-                LARAVEL for api development, REACT JS for web development and
-                ELECTRON for desktop app development.
+                LARAVEL / SPRINGBOOT for api development, ANGULAR / REACT JS for web
+                development.
               </p>
             </div>
 
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">
-              <h4>Bachelor of Science in ICT</h4>
-              <h5>2018 - 2021</h5>
+              <h4>Self taught programmer</h4>
+              <h5>2018 - Present</h5>
               <p>
-                <em>Mzumbe University, Morogoro - Tanzania</em>
+                <em>Youtube, Freecodecamp, Udemy</em>
               </p>
               <p>
-                Completed a bachelor degree in ICT basing mostly in software
-                development
+                Learning;
+                <ul>
+                  <li>Computer programming (Php, Java, Javascript, Dart)</li>
+                  <li>Application development (Angular, Flutter, Laravel)</li>
+                </ul>
               </p>
             </div>
             <div className="resume-item">

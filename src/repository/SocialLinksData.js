@@ -6,12 +6,12 @@ const SocialLinks = {
       socialIcon: `bi bi-twitter`,
       socialClass: `twitter`,
     },
-    {
-      id: 2,
-      link: `https://www.facebook.com/profile.php?id=100055855374700`,
-      socialIcon: `bi bi-facebook`,
-      socialClass: `facebook`,
-    },
+    // {
+    //   id: 2,
+    //   link: `https://www.facebook.com/profile.php?id=100055855374700`,
+    //   socialIcon: `bi bi-facebook`,
+    //   socialClass: `facebook`,
+    // },
     {
       id: 3,
       link: `https://instagram.com/jumaadinani19`,

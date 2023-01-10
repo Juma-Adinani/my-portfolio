@@ -37,7 +37,7 @@ const About = () => {
                         href="https://jumaadinani.vercel.app"
                         className="text-success"
                       >
-                        https://jumaadinani.vercel.app
+                        jumaadinani.vercel.app
                       </a>
                     </span>
                   </li>
@@ -91,7 +91,7 @@ const About = () => {
           <div className="col-lg-6">
             <div className="progress">
               <span className="skill">
-                REACT JS<i className="val">90%</i>
+                ANGULAR JS<i className="val">90%</i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -105,7 +105,7 @@ const About = () => {
             </div>
             <div className="progress">
               <span className="skill">
-                FLUTTER <i className="val">90%</i>
+                DART (FLUTTER) <i className="val">90%</i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -119,7 +119,7 @@ const About = () => {
             </div>
             <div className="progress">
               <span className="skill">
-                LARAVEL <i className="val">100%</i>
+                PHP (LARAVEL) <i className="val">100%</i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -136,7 +136,7 @@ const About = () => {
           <div className="col-lg-6">
             <div className="progress">
               <span className="skill">
-                PHP <i className="val">100%</i>
+                JAVA (SPRING BOOT) <i className="val">100%</i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -149,8 +149,8 @@ const About = () => {
               </div>
             </div>
             <div className="progress">
-              <span className="skill">
-                JavaScript <i className="val">85%</i>
+              <span className="skill">``
+                REACT JS <i className="val">90%</i>
               </span>
               <div className="progress-bar-wrap">
                 <div
