@@ -25,7 +25,7 @@ const Resume = () => {
                 </em>
                 <br />
                 I'm mostly experienced with FLUTTER for mobile app development,
-                LARAVEL / SPRINGBOOT for api development, ANGULAR / REACT JS for web
+                LARAVEL / SPRING BOOT for api development, ANGULAR / REACT JS for web
                 development.
               </p>
             </div>
@@ -41,7 +41,7 @@ const Resume = () => {
                 Learning;
                 <ul>
                   <li>Computer programming (Php, Java, Javascript, Dart)</li>
-                  <li>Application development (Angular, Flutter, Laravel)</li>
+                  <li>Application development (Angular, Flutter, Laravel, Spring Boot)</li>
                 </ul>
               </p>
             </div>

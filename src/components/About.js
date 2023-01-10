@@ -149,7 +149,7 @@ const About = () => {
               </div>
             </div>
             <div className="progress">
-              <span className="skill">``
+              <span className="skill">
                 REACT JS <i className="val">90%</i>
               </span>
               <div className="progress-bar-wrap">
